@@ -25,7 +25,8 @@ const app = express()           //crea una instancia de la aplicación Express u
 console.clear();                // Limpia la consola antes de iniciar la aplicación
 
 //middlewares
-app.use(cors())                 // Habilita CORS para permitir solicitudes de diferentes orígenes        
+app.use(cors())                 // Habilita CORS para permitir solicitudes de diferentes orígenes  
+      
 app.use(setHeaders)             //Aplica middleware personalizado para establecer cabeceras de respuesta     
 app.use(express.json());        // Parsear solicitudes JSON entrantes   
 app.use(logger)                 // Aplica middleware personalizado para loggear información de las peticiones
