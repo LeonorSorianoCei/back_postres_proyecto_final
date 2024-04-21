@@ -50,7 +50,7 @@ router.use('/files', express.static('uploads'));
 router.get("/postres", getAllPostres);
 
 // Crear un nuevo postre
-router.post("/upload", upload.single('imagen_subida'), createPostre);
+router.post("/postres/crear", upload.single('imagen_subida'), createPostre);
 
 // Actualizar un postre
 router.put("/postres/:id", updatePostre); 
