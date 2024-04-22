@@ -69,7 +69,7 @@ router.delete("/postres/:id/forever", deletePostreForever);
 
 // AUTH
 // Crear un nuevo usuario para el registro
-router.post("/create/user", upload.single('imagen_usuario'), createUser);
+router.post("/create/user", createUser);
 
 // iniciar sesion 
 router.post("/login/user", loginUser);

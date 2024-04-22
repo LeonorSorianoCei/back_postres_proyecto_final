@@ -180,7 +180,6 @@ export const createUser = async (req, res, next) => {
         const nuevoUsuario = new Usuario({
             nombre,
             clave: claveEncriptada,
-            imagen: req.file.filename,
             descripcion,
             isAdmin : false,
             isLogged : false,
