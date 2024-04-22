@@ -132,7 +132,6 @@ export const createPostre = async (req, res, next) => {
          */
         const nuevoPostre = new Postre({
             nombre,
-            imagen : req.file.filename,
             descripcion,
             ingredientes,
             instrucciones,
